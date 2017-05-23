@@ -1,0 +1,12 @@
+{
+    "extends": [
+      "standard",
+      "plugin:react/recommended"
+    ],
+    "parser": "babel-eslint",
+    "plugins": [
+        "standard",
+        "promise",
+        "react"
+    ]
+}
