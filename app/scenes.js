@@ -32,12 +32,12 @@ function scenesToJSX (scenes) {
 
     if (children.length) {
       return (
-        <Scene key={scene.key} title={scene.title} component={scene.component} initial={scene.initial}>
+        <Scene {...scene}>
           { children }
         </Scene>
       )
     } else {
-      return <Scene key={scene.key} title={scene.title} component={scene.component} initial={scene.initial}/>
+      return <Scene {..scene}/>
     }
   })
 }
